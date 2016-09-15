@@ -1,6 +1,6 @@
 {
   "name": "thexa4-secrets_server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "thexa4",
   "summary": "Puppet module to set up SecretServer",
   "license": "MIT",
@@ -8,9 +8,15 @@
   "project_page": "https://github.com/thexa4/puppet-secret_server",
   "issues_url": "https://github.com/thexa4/puppet-secret_server/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs-vcsrepo","version_requirement":">= 1.40.0"},
     {"name":"puppetlabs-apache","version_requirement":">= 1.10.0"}
   ],
-  "data_provider": null
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem":"Debian",
+      "operatingsystemrelease":[ "8" ]
+    }
+  ]
 }
 
