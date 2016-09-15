@@ -1,3 +1,3 @@
 # secrets_server
 
-Sets up SecretServer using apache.
+Sets up [secrets-server](https://github.com/thexa4/secrets-server) using apache.
