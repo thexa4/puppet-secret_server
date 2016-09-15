@@ -9,6 +9,7 @@
   "issues_url": "https://github.com/thexa4/puppet-secret_server/issues",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs-apache","version_requirement":">= 1.10.0"}
   ],
   "data_provider": null
 }

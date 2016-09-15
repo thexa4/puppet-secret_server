@@ -34,6 +34,12 @@ class secrets_server {
 		override => ['All'],
 	}
 
+	exec { "create secrets_server config.php":
+		creates => "/opt/max/secrets/config.php",
+		exec => "/bin/cp /opt/max/secrets/config.php.sample /opt/max/secrets/config.php",
+		require => Vcsrepo["/opt/max/secrets"],
+	}
+
 	apache::vhost { "$host-secure":
 		port	=> '443',
 		docroot	=> '/opt/max/secrets/public',
